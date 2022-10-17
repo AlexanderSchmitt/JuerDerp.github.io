@@ -23,7 +23,11 @@
   </style>
 	
   <body>
-
+ <div id="box" style="display:; padding: 15px; z-index:99999; background-color: black;">
+  <div onclick="window.location.href='https://www.web.de';" style="cursor: pointer; padding: 5px;">
+    <h1 style="color:white;">Auf diesen Text tippen, um zu den Fotos zu gelangen</h1>
+  </div>
+ </div>
     <a-scene mindar-image="imageTargetSrc: targets.mind;" vr-mode-ui="enabled: false" device-orientation-permission-ui="enabled: false">
  
       <a-assets>
@@ -39,11 +43,7 @@
     </a-scene>
 
 
- <div id="box" style="display:none; padding: 15px;">
-  <div onclick="window.location.href='https://www.web.de';" style="cursor: pointer; padding: 5px;">
-    <h1 style="color:white;">Auf diesen Text tippen, um zu den Fotos zu gelangen</h1>
-  </div>
- </div>
+
 
   </body>
 </html>
