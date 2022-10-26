@@ -5,6 +5,21 @@
     <script src="https://cdn.jsdelivr.net/gh/hiukim/mind-ar-js@1.1.5/dist/mindar-image.prod.js"></script>
     <script src="https://aframe.io/releases/1.2.0/aframe.min.js"></script>
     <script src="https://cdn.jsdelivr.net/gh/hiukim/mind-ar-js@1.1.5/dist/mindar-image-aframe.prod.js"></script>
+	  <script>
+	  document.addEventListener("DOMContentLoaded", function() {
+	const sceneEl = document.querySelector('a-scene');
+	const arSystem = sceneEl.systems["mindar-image-system"];
+	// arReady event triggered when ready
+	sceneEl.addEventListener("arReady", (event) => {
+	  // console.log("MindAR is ready")
+		box.setAttribute('style','display',' ');
+	});
+	// arError event triggered when something went wrong. Mostly browser compatbility issue
+	sceneEl.addEventListener("arError", (event) => {
+	  // console.log("MindAR failed to start")
+	});
+      });
+	  </script>
   </head>
 
 <style>
@@ -23,7 +38,7 @@
   </style>
 	
   <body>
-<div id="box" style='position: fixed; display: ; background-color: black; bottom: 10px; width: 75%; text-align:center; bottom: 10px; z-index: 24748;'>
+<div id="box" style='position: fixed; display: false; background-color: black; bottom: 10px; width: 75%; text-align:center; bottom: 10px; z-index: 24748;'>
 	<div onclick="window.location.href='https://www.web.de';" style="cursor: pointer; padding: 5px;">
     <h1 style="color:white;">Auf diesen Text tippen, um zu den Fotos zu gelangen</h1>
   </div>
