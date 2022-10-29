@@ -39,12 +39,20 @@
    background-color: black;
    border: 2px solid white;
   }
+#textInBox {
+	cursor: pointer;
+	padding: 5px;
+  }
+#textInBoxBox {
+	color:white;
+	font-size: 25.5vw;
+  }
   </style>
 	
   <body>
 <div id="box" style='display: none;'>
 	<div id="textInBox" onclick="window.location.href='https://www.web.de';" style="cursor: pointer; padding: 5px; display: none;">
-    <h1 id="textInBoxBox" style="color:white; display: none;">Auf diesen Text tippen, um zu den Fotos zu gelangen</h1>
+    <h1 id="textInBoxBox" style="color:white; font-size: 25.5vw; display: none;">Auf diesen Text tippen, um zu den Fotos zu gelangen</h1>
   </div>
  </div>
     <a-scene mindar-image="imageTargetSrc: targets.mind; filterMinCF:0.000001; filterBeta: 10;" vr-mode-ui="enabled: false" device-orientation-permission-ui="enabled: false">
