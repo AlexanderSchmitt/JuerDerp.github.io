@@ -13,6 +13,7 @@
 	sceneEl.addEventListener("arReady", (event) => {
 	  // console.log("MindAR is ready")
 		box.setAttribute('style', 'display', ' ')
+		textInBox.setAttribute('style', 'display', ' ')
 	});
 	// arError event triggered when something went wrong. Mostly browser compatbility issue
 	sceneEl.addEventListener("arError", (event) => {
@@ -41,7 +42,7 @@
 	
   <body>
 <div id="box" style='display: none;'>
-	<div onclick="window.location.href='https://www.web.de';" style="cursor: pointer; padding: 5px;">
+	<div id="textInBox" onclick="window.location.href='https://www.web.de';" style="cursor: pointer; padding: 5px; display: none;">
     <h1 style="color:white;">Auf diesen Text tippen, um zu den Fotos zu gelangen</h1>
   </div>
  </div>
