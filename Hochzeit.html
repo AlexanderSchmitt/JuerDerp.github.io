@@ -12,8 +12,9 @@
 	// arReady event triggered when ready
 	sceneEl.addEventListener("arReady", (event) => {
 	  // console.log("MindAR is ready")
-		box.setAttribute('style', 'display', ' ')
-		textInBox.setAttribute('style', 'display', ' ')
+		box.setAttribute('style', 'display', ' ');
+		textInBox.setAttribute('style', 'display', ' ');
+		textInBoxBox.setAttribute('style', 'display', ' ');
 	});
 	// arError event triggered when something went wrong. Mostly browser compatbility issue
 	sceneEl.addEventListener("arError", (event) => {
@@ -43,7 +44,7 @@
   <body>
 <div id="box" style='display: none;'>
 	<div id="textInBox" onclick="window.location.href='https://www.web.de';" style="cursor: pointer; padding: 5px; display: none;">
-    <h1 style="color:white;">Auf diesen Text tippen, um zu den Fotos zu gelangen</h1>
+    <h1 id="textInBoxBox" style="color:white; display: none;">Auf diesen Text tippen, um zu den Fotos zu gelangen</h1>
   </div>
  </div>
     <a-scene mindar-image="imageTargetSrc: targets.mind; filterMinCF:0.000001; filterBeta: 10;" vr-mode-ui="enabled: false" device-orientation-permission-ui="enabled: false">
